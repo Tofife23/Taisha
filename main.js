@@ -1,4 +1,4 @@
-import './style.css'
+// CSS is loaded from index.html for direct browser usage.
 
 const images = {
   hero: 'https://images.pexels.com/photos/16514703/pexels-photo-16514703.jpeg?auto=compress&cs=tinysrgb&w=1800',
