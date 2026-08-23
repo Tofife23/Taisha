@@ -32,7 +32,7 @@ document.querySelector('#app').innerHTML = `
       <div class="hero-copy reveal">
         <p class="eyebrow">Matcha · káva · pečivo</p>
         <h1>Taisha<br /><em>kavárna</em></h1>
-        <p class="hero-intro">Kavárna v Brně. Dvě pobočky — v Černých Polích a na Veveří. Přijďte si na matchu, kávu nebo croissant.</p>
+        <p class="hero-intro">Výběrová káva, japonská matcha a dezerty inspirované Asií. Místo, kam si zajdete na dobrý nápoj i na chvíli klidu.</p>
         <div class="hero-actions">
           <a class="button button-dark" href="#menu">Zobrazit menu <span>↗</span></a>
           <a class="text-link" href="#locations">Kde nás najdete <span>↘</span></a>
@@ -48,17 +48,29 @@ document.querySelector('#app').innerHTML = `
 
     <section class="locations section-pad" id="locations">
       <div class="section-heading reveal">
-        <p class="eyebrow">Dvě pobočky v Brně</p>
+        <p class="eyebrow">Pobočka v Brně — další v Jihlavě</p>
         <h2>Kde nás<br /><em>najdete</em></h2>
       </div>
       <div class="location-grid">
         <article class="location-card reveal">
-          <div class="card-image"><img src="${images.locationOne}" alt="Kavárna na Vinohradech" /><span class="card-number">01</span></div>
-          <div class="card-content"><div><p class="eyebrow">Brno 616</p><h3>Černá Pole</h3></div><a class="circle-arrow" href="#find-us" aria-label="Zobrazit pobočku Černá Pole">↗</a><p class="location-meta">tř. Kpt. Jaroše 12, Brno 616<br /><span>Po–Pá 8–20 · So–Ne 9–20</span></p></div>
+          <div class="card-image"><img src="${images.locationOne}" alt="Taisha — Campus, Brno" /><span class="card-number">01</span></div>
+          <div class="card-content"><div><p class="eyebrow">Brno</p><h3>Campus</h3></div><a class="circle-arrow" href="#find-us" aria-label="Zobrazit pobočku Campus">↗</a><p class="location-meta">Kampus, Brno<br /><span>Po–Pá 8–20 · So–Ne 9–20</span></p></div>
         </article>
-        <article class="location-card reveal reveal-delay">
-          <div class="card-image"><img src="${images.locationTwo}" alt="Kavárna na Veveří" /><span class="card-number">02</span></div>
-          <div class="card-content"><div><p class="eyebrow">Brno 602</p><h3>Veveří</h3></div><a class="circle-arrow" href="#find-us" aria-label="Zobrazit pobočku Veveří">↗</a><p class="location-meta">Veveří 51, Brno 602<br /><span>Po–Pá 8–19 · So–Ne 9–19</span></p></div>
+        <article class="location-card reveal reveal-delay coming-soon">
+          <div class="card-image">
+            <img src="${images.locationTwo}" alt="Taisha — Jihlava (coming soon)" />
+            <span class="card-number">02</span>
+          </div>
+          <div class="card-content">
+            <div class="card-header">
+              <div class="coming-label">JIHLAVA · <span class="coming-badge">PŘIPRAVUJEME</span></div>
+              <p class="eyebrow">Jihlava</p>
+              <h3>Nová pobočka</h3>
+              <p class="coming-note">Otevíráme listopad 2026</p>
+            </div>
+            <a class="circle-arrow" href="#find-us" aria-label="Plánované otevření Jihlava">↗</a>
+            <p class="location-meta">Plánované otevření: listopad 2026<br /><span>Brzy více informací</span></p>
+          </div>
         </article>
       </div>
     </section>
@@ -78,24 +90,69 @@ document.querySelector('#app').innerHTML = `
 
     <section class="story section-pad" id="about">
       <div class="story-image reveal"><img src="${images.story}" alt="Čajový set na dřevěném stole" /><span class="vertical-label">Taisha</span></div>
-      <div class="story-copy reveal reveal-delay"><p class="eyebrow">O nás</p><h2>O<br /><em>Taishe</em></h2><p>Taisha je brněnská kavárna. Začali jsme s jednou pobočkou v Černých Polích, druhá přibyla na Veveří. Děláme matchu, výběrovou kávu a pečeme vlastní pečivo.</p><a class="text-link" href="#space">Podívat se na prostor <span>↘</span></a></div>
+      <div class="story-copy reveal reveal-delay"><p class="eyebrow">O nás</p><h2>O<br /><em>Taishe</em></h2><p>Místo, kde se potkává svět výběrové kávy s kouzlem japonské matchy. V Taisha věříme, že na dobrém nápoji záleží stejně jako na okamžiku, ve kterém si ho vychutnáte. Připravujeme výběrovou i filtrovanou kávu, autentické matcha drinky a čerstvé dezerty, které spojují jednoduchost s inspirací z Asie. <br>
+
+Každý šálek i každý dezert připravujeme s důrazem na kvalitní suroviny, vyváženou chuť a poctivé zpracování. Taisha je místo pro ranní kávu, odpolední matchu i chvíle, kdy si jednoduše chcete na chvíli odpočinout od okolního světa.</p><a class="text-link" href="#space">Podívat se na prostor <span>↘</span></a></div>
     </section>
 
     <section class="space-section" id="space">
       <div class="space-heading section-pad reveal"><p class="eyebrow">Prostor</p><h2>Naše<br /><em>kavárna</em></h2></div>
-      <div class="gallery"><div class="gallery-item gallery-wide reveal"><img src="${images.galleryOne}" alt="Posezení v kavárně" /><span>01 — Černá Pole</span></div><div class="gallery-item gallery-tall reveal reveal-delay"><img src="${images.galleryTwo}" alt="Kávový bar" /><span>02 — Veveří</span></div><div class="gallery-item gallery-small reveal"><img src="${images.galleryThree}" alt="Matcha a pečivo" /><span>03 — matcha</span></div></div>
+      <div class="gallery"><div class="gallery-item gallery-wide reveal"><img src="${images.galleryOne}" alt="Posezení v kavárně" /><span>01 — Campus</span></div><div class="gallery-item gallery-tall reveal reveal-delay"><img src="${images.galleryTwo}" alt="Kávový bar" /><span>02 — Jihlava (coming)</span></div><div class="gallery-item gallery-small reveal"><img src="${images.galleryThree}" alt="Matcha a pečivo" /><span>03 — matcha</span></div></div>
     </section>
 
     <section class="find-us section-pad" id="find-us">
       <div class="find-heading reveal"><p class="eyebrow">Otevírací doba a adresa</p><h2>Najdete nás<br /><em>tady</em></h2><p>Přijďte se podívat na některou z poboček.</p></div>
       <div class="find-list reveal reveal-delay">
-        <div class="find-row"><span class="find-number">01</span><div><h3>Černá Pole</h3><p>tř. Kpt. Jaroše 12<br />Brno 616</p></div><div class="find-hours"><span>Otevírací doba</span><p>Po–Pá 8–20<br />So–Ne 9–20</p></div><a class="circle-arrow" href="https://maps.google.com" target="_blank" rel="noreferrer" aria-label="Otevřít Černá Pole v Google Maps">↗</a></div>
-        <div class="find-row"><span class="find-number">02</span><div><h3>Veveří</h3><p>Veveří 51<br />Brno 602</p></div><div class="find-hours"><span>Otevírací doba</span><p>Po–Pá 8–19<br />So–Ne 9–19</p></div><a class="circle-arrow" href="https://maps.google.com" target="_blank" rel="noreferrer" aria-label="Otevřít Veveří v Google Maps">↗</a></div>
+        <div class="find-row"><span class="find-number">01</span><div><h3>Campus, Brno</h3><p>Kampus<br />Brno</p></div><div class="find-hours"><span>Otevírací doba</span><p>Po–Pá 8–20<br />So–Ne 9–20</p></div><a class="circle-arrow" href="https://maps.google.com" target="_blank" rel="noreferrer" aria-label="Otevřít Campus v Google Maps">↗</a></div>
+        <div class="find-row coming-soon"><span class="find-number">02</span><div><div class="coming-label">JIHLAVA · <span class="coming-badge">PŘIPRAVUJEME</span></div><h3>Jihlava</h3><p>Plánované otevření<br />listopad 2026</p></div><div class="find-hours"><span>Stav</span><p>Plánované otevření — sledujte nás</p></div><a class="circle-arrow" href="#" aria-label="Informace o otevření Jihlava">↗</a></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer" id="instagram"><div class="footer-top"><a class="brand footer-brand" href="#top">TAISHA<span class="brand-dot">.</span></a><p>Matcha, káva<br />a pečivo.</p><a class="footer-social" href="https://instagram.com" target="_blank" rel="noreferrer">Instagram <span>↗</span></a></div><div class="footer-bottom"><span>© 2024 Taisha</span><span>Brno</span><a href="#top">Nahoru ↑</a></div></footer>
+  <footer class="site-footer" id="instagram">
+    <div class="footer-top">
+      <a class="brand footer-brand" href="#top">TAISHA<span class="brand-dot">.</span></a>
+
+      <div class="footer-meta">
+        <div class="footer-contact">
+          <h4>Kontakt</h4>
+          <ul>
+            <li class="contact-item contact-phone">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4.5a2.5 2.5 0 0 1 2.5-2.5h5A2.5 2.5 0 0 1 17 4.5v15A2.5 2.5 0 0 1 14.5 22h-5A2.5 2.5 0 0 1 7 19.5v-15Z"/><path d="M9.5 2.8h5"/><path d="M11 18.5h2"/><path d="M10.5 7.2h3"/><path d="M10.5 10.2h3"/></svg>
+              <a href="tel:704533333">704 533 333</a>
+            </li>
+            <li class="contact-item contact-email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 7.5A2.5 2.5 0 0 1 6 5h12a2.5 2.5 0 0 1 2.5 2.5v9A2.5 2.5 0 0 1 18 19H6a2.5 2.5 0 0 1-2.5-2.5v-9Z"/><path d="m4.5 7 7.5 6 7.5-6"/></svg>
+              <a href="mailto:info@taisha.cz">info@taisha.cz</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-socials">
+          <h4>Sledujte nás</h4>
+          <div class="footer-social-grid">
+            <div class="social-branch">
+
+              <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank" rel="noreferrer" class="social-link social-facebook" aria-label="Facebook OC Campus">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 8.5V6.8c0-.9.6-1.3 1.3-1.3h1.6V2.8h-2.8c-2.7 0-3.9 1.7-3.9 3.9v1.8H7.5v3.4h2.4V21h3.6v-9.1h2.7l.4-3.4h-3.1Z" fill="currentColor"/></svg>
+                </a>
+                <a href="https://www.instagram.com/taisha.cafe" target="_blank" rel="noreferrer" class="social-link social-instagram" aria-label="Instagram OC Campus">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.1" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>
+                </a>
+                <a href="https://www.tiktok.com/@taisha.cafe" target="_blank" rel="noreferrer" class="social-link social-tiktok" aria-label="TikTok OC Campus">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 3.2c.8 2 2.2 3.1 4.4 3.4v2.7c-1.7-.1-3.2-.7-4.4-1.8v7.1a5.2 5.2 0 1 1-5.2-5.2c.5 0 .9.1 1.3.2v2.8a2.7 2.7 0 1 0 2.6 2.7V3.2h1.3Z" fill="currentColor"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-tagline">Matcha, káva<br />a pečivo.</p>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Taisha</span><a href="#top">Nahoru ↑</a></div>
+  </footer>
 
   <div class="mobile-menu" aria-hidden="true"><nav><a href="#menu">Menu</a><a href="#locations">Pobočky</a><a href="#about">O nás</a><a href="#space">Prostor</a><a href="#instagram">Instagram</a></nav></div>
 `
