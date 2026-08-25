@@ -15,11 +15,11 @@ document.querySelector('#app').innerHTML = `
   <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="Taisha — domů">TAISHA<span class="brand-dot">.</span></a>
     <nav class="desktop-nav" aria-label="Hlavní navigace">
-      <a href="#menu">Menu</a>
+      <a href="menu.html">Menu</a>
       <a href="#locations">Pobočky</a>
       <a href="#about">O nás</a>
       <a href="#space">Prostor</a>
-      <a href="#instagram">Instagram</a>
+      <a href="https://www.instagram.com/taisha.cafe/" target="_blank" rel="noopener noreferrer">Instagram</a>
     </nav>
     <a class="header-visit" href="#find-us">Navštívit <span>↗</span></a>
     <button class="menu-toggle" type="button" aria-label="Otevřít menu" aria-expanded="false">
@@ -34,14 +34,14 @@ document.querySelector('#app').innerHTML = `
         <h1>Taisha<br /><em>kavárna</em></h1>
         <p class="hero-intro">Výběrová káva, japonská matcha a dezerty inspirované Asií. Místo, kam si zajdete na dobrý nápoj i na chvíli klidu.</p>
         <div class="hero-actions">
-          <a class="button button-dark" href="#menu">Zobrazit menu <span>↗</span></a>
+          <a class="button button-dark" href="menu.html">Zobrazit menu <span>↗</span></a>
           <a class="text-link" href="#locations">Kde nás najdete <span>↘</span></a>
         </div>
       </div>
       <div class="hero-visual reveal reveal-delay">
         <img src="${images.hero}" alt="Interiér kavárny s dřevěným posezením" />
         <div class="hero-stamp" aria-hidden="true"><span>MATCHA<br />KÁVA<br />PEČIVO</span></div>
-        <p class="image-caption">Černá Pole<br /><span>Brno 616</span></p>
+        <p class="image-caption">Campus<br /><span>Brno</span></p>
       </div>
       <div class="scroll-note"><span class="scroll-line"></span>Posuňte se dolů</div>
     </section>
@@ -82,7 +82,7 @@ document.querySelector('#app').innerHTML = `
           <div class="menu-row"><div><span class="menu-index">01</span><h3>Matcha</h3></div><p>ceremoniální · latte · ledová</p><span class="menu-plus">+</span></div>
           <div class="menu-row"><div><span class="menu-index">02</span><h3>Káva</h3></div><p>espresso · filtrovaná · ovesné</p><span class="menu-plus">+</span></div>
           <div class="menu-row"><div><span class="menu-index">03</span><h3>Pečivo a sladké</h3></div><p>croissanty · dorty · sušenky</p><span class="menu-plus">+</span></div>
-          <a class="button button-outline" href="#find-us">Přijďte ochutnat <span>↗</span></a>
+          <a class="button button-outline" href="menu.html">Zobrazit celé menu <span>↗</span></a>
         </div>
         <div class="menu-image reveal reveal-delay"><img src="${images.menu}" alt="Matcha latte a pečivo na stole" /><span>Čerstvé každé<br />ráno.</span></div>
       </div>

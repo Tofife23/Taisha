@@ -8,7 +8,7 @@ a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .section-pad { padding-left: clamp(24px, 6vw, 96px); padding-right: clamp(24px, 6vw, 96px); }
-.site-header { position: fixed; z-index: 10; top: 0; left: 0; width: 100%; height: 84px; display: flex; align-items: center; justify-content: space-between; padding: 0 clamp(24px, 6vw, 96px); color: #f7f3eb; transition: background .4s, color .4s, box-shadow .4s; }
+.site-header { position: fixed; z-index: 10; top: 0; left: 0; width: 100%; height: 84px; display: flex; align-items: center; justify-content: space-between; padding: 0 clamp(24px, 6vw, 96px); color: #f7f3eb; background: transparent; border-bottom: none; backdrop-filter: none; transition: background .4s, color .4s, box-shadow .4s; }
 .site-header.scrolled { color: var(--ink); background: rgba(244,240,232,.94); box-shadow: 0 1px 0 var(--line); backdrop-filter: blur(14px); }
 .brand { letter-spacing: .12em; font-size: 14px; font-weight: 500; }
 .brand-dot { color: #b8ce9e; }
