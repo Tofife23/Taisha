@@ -1,8 +1,8 @@
 :root {
   --ink: #25261f;
-  --sage: #63745b;
-  --sage-dark: #42533e;
-  --wood: #b28c67;
+  --sage: #3B2A21;
+  --sage-dark: #3B2A21;
+  --wood: #3B2A21;
   --cream: #f4f0e8;
   --paper: #ebe5d9;
   --line: rgba(37,38,31,.18);
@@ -22,6 +22,10 @@
   background: rgba(244,240,232,.72);
   border-bottom: 1px solid rgba(37,38,31,.08);
   backdrop-filter: blur(10px);
+}
+
+.menu-page-body .site-footer {
+  background: #3B2A21;
 }
 
 .menu-page-body .site-header.scrolled {

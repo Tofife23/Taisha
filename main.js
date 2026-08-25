@@ -12,6 +12,19 @@ const images = {
 }
 
 document.querySelector('#app').innerHTML = `
+  <div class="announcement-bar" aria-label="Announcement">
+    <div class="announcement-track">
+      <div class="announcement-group" aria-label="Otevíráme brzy">
+        <span>OTEVÍRÁME JIŽ BRZY • TĚŠÍME SE NA VÁS • OTEVÍRÁME JIŽ BRZY •</span>
+        <span>OTEVÍRÁME JIŽ BRZY • TĚŠÍME SE NA VÁS • OTEVÍRÁME JIŽ BRZY •</span>
+      </div>
+      <div class="announcement-group" aria-hidden="true">
+        <span>OTEVÍRÁME JIŽ BRZY • TĚŠÍME SE NA VÁS • OTEVÍRÁME JIŽ BRZY •</span>
+        <span>OTEVÍRÁME JIŽ BRZY • TĚŠÍME SE NA VÁS • OTEVÍRÁME JIŽ BRZY •</span>
+      </div>
+    </div>
+  </div>
+
   <header class="site-header" id="top">
     <a class="brand" href="#top" aria-label="Taisha — domů">TAISHA<span class="brand-dot">.</span></a>
     <nav class="desktop-nav" aria-label="Hlavní navigace">
