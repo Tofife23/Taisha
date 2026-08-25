@@ -2,7 +2,7 @@
 
 const images = {
   hero: 'https://images.pexels.com/photos/16514703/pexels-photo-16514703.jpeg?auto=compress&cs=tinysrgb&w=1800',
-  menu: 'https://images.pexels.com/photos/33618578/pexels-photo-33618578.jpeg?auto=compress&cs=tinysrgb&w=1200',
+  menu: 'img/kava.jpg',
   locationOne: 'https://images.pexels.com/photos/1002740/pexels-photo-1002740.jpeg?auto=compress&cs=tinysrgb&w=1200',
   locationTwo: 'https://images.pexels.com/photos/17593509/pexels-photo-17593509.jpeg?auto=compress&cs=tinysrgb&w=1200',
   story: 'https://images.pexels.com/photos/8474151/pexels-photo-8474151.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -76,7 +76,7 @@ document.querySelector('#app').innerHTML = `
     </section>
 
     <section class="menu-section section-pad" id="menu">
-      <div class="menu-top reveal"><div><p class="eyebrow">Co u nás dostanete</p><h2>Naše<br /><em>menu</em></h2></div><p class="menu-note">Káva, matcha a čerstvé pečivo.<br />Pečeme každé ráno.</p></div>
+      <div class="menu-top reveal"><div><p class="eyebrow">Co u nás dostanete</p><h2>Naše<br /><em>menu</em></h2></div><p class="menu-note">Káva, matcha a čerstvé pečivo.</p></div>
       <div class="menu-layout">
         <div class="menu-list reveal">
           <div class="menu-row"><div><span class="menu-index">01</span><h3>Matcha</h3></div><p>ceremoniální · latte · ledová</p><span class="menu-plus">+</span></div>
@@ -84,7 +84,7 @@ document.querySelector('#app').innerHTML = `
           <div class="menu-row"><div><span class="menu-index">03</span><h3>Pečivo a sladké</h3></div><p>croissanty · dorty · sušenky</p><span class="menu-plus">+</span></div>
           <a class="button button-outline" href="menu.html">Zobrazit celé menu <span>↗</span></a>
         </div>
-        <div class="menu-image reveal reveal-delay"><img src="${images.menu}" alt="Matcha latte a pečivo na stole" /><span>Čerstvé každé<br />ráno.</span></div>
+        <div class="menu-image reveal reveal-delay"><img src="${images.menu}" alt="Matcha latte a pečivo na stole" /></div>
       </div>
     </section>
 
